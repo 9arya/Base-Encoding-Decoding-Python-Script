@@ -34,7 +34,6 @@ def fungsi(tipe):
         sleep(0.7)
       elif pilih == 3:
         print("menghentikan program")
-        sleep(10)
         break 
       else:
         print(colored("masukanmu salah", "red"))

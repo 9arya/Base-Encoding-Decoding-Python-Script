@@ -20,11 +20,6 @@ while True:
       fungsi(85)
     elif pilihan == 5:
       sleep(0.001)
-      print("membereskan sisa program")
-      sleep(1.5)
-      print("sebentar lagi")
-      sleep(3)
-      print("selesai")
       break
     else:
       print(colored("pilihanmu tidak ada dalam daftar", "yellow"))
