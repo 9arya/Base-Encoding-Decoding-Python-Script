@@ -1,5 +1,4 @@
 from fungsi import fungsi
-from time import sleep
 from termcolor import colored
 
 while True:
@@ -7,19 +6,14 @@ while True:
   try:
     pilihan = int(input(">>").strip())
     if pilihan == 1:
-      sleep(0.02)
       fungsi(16)
     elif pilihan == 2:
-      sleep(0.02)
       fungsi(32)
     elif pilihan == 3:
-      sleep(0.02)
       fungsi(64)
     elif pilihan == 4:
-      sleep(0.02)
       fungsi(85)
     elif pilihan == 5:
-      sleep(0.001)
       break
     else:
       print(colored("pilihanmu tidak ada dalam daftar", "yellow"))

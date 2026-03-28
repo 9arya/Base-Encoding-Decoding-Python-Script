@@ -1,6 +1,5 @@
 from base64 import b32encode, b32decode, b64decode, b64encode, b16decode, b16encode, b85encode, b85decode
 from termcolor import colored
-from time import sleep
 import binascii
 def fungsi(tipe):
   metodeen ={
@@ -25,13 +24,11 @@ def fungsi(tipe):
         pesan = input("ketik pesannya:").encode("UTF-8")
         print("hasilnya:\n")
         print(colored(metodeen[tipe](pesan).decode("UTF-8"), "green"))
-        sleep(0.7)
       elif pilih == 2:
         kode = input("apa kodenya:").encode("UTF-8")
         print("hasilnya:\n")
         print(colored(metodede[tipe](kode).decode("UTF-8"), "blue"))
         print("\n")
-        sleep(0.7)
       elif pilih == 3:
         print("menghentikan program")
         break 
