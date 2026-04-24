@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import sys
-from base64 import *
+import base64
 import binascii
 print("\n")
 a = " ".join(sys.argv[3:]).encode()
@@ -9,20 +9,20 @@ try:
         print("usage:\nbed en b16 hello word")
     else:
         mtden = {
-                "b16": b16encode,
-                "b32": b32encode,
-                "b32hex": b32hexencode,
-                "b64": b64encode,
-                "b85": b85encode,
-                "z85": z85encode
+                "b16": base64.b16encode,
+                "b32": base64.b32encode,
+                "b32hex": base64.b32hexencode,
+                "b64": base64.b64encode,
+                "b85": base64.b85encode,
+                "z85": base64.z85encode
                 }
         mtddec = {
-                "b16": b16decode,
-                "b32": b32decode,
-                "b32hex": b32hexdecode,
-                "b64": b64decode,
-                "b85": b85decode,
-                "z85": z85decode
+                "b16": base64.b16decode,
+                "b32": base64.b32decode,
+                "b32hex": base64.b32hexdecode,
+                "b64": base64.b64decode,
+                "b85": base64.b85decode,
+                "z85": base64.z85decode
                 }
         if sys.argv[1] == "en":
             if sys.argv[2] in mtden:
