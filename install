@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-apt install python3 -y
-pip install termcolor
-	
