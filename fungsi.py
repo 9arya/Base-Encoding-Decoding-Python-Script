@@ -1,6 +1,10 @@
-from base64 import b32encode, b32decode, b64decode, b64encode, b16decode, b16encode, b85encode, b85decode
-from termcolor import colored
 import binascii
+from base64 import (b16decode, b16encode, b32decode, b32encode, b64decode,
+                    b64encode, b85decode, b85encode)
+
+from termcolor import colored
+
+
 def fungsi(tipe):
   metodeen ={
     85: b85encode,
@@ -17,28 +21,27 @@ def fungsi(tipe):
   if tipe not in metodede:
     return
   while True:
-    print("pilih program:\n1.encode\n2.decode\n3.kembali")
+    print("pick program:\n1.encode\n2.decode\n3.back")
     try:
       pilih = int(input(">>").strip())
       if pilih == 1:
-        pesan = input("ketik pesannya:").encode("UTF-8")
-        print("hasilnya:\n")
+        pesan = input("write your message:").encode("UTF-8")
+        print("you got this:\n")
         print(colored(metodeen[tipe](pesan).decode("UTF-8"), "green"))
       elif pilih == 2:
-        kode = input("apa kodenya:").encode("UTF-8")
-        print("hasilnya:\n")
+        kode = input("write the code:").encode("UTF-8")
+        print("you got this:\n")
         print(colored(metodede[tipe](kode).decode("UTF-8"), "blue"))
         print("\n")
       elif pilih == 3:
-        print("menghentikan program")
         break 
       else:
-        print(colored("masukanmu salah", "red"))
+        print(colored("no one in the options", "red"))
     except ValueError:
-      print(colored("masukan tidak benar", "red"))
+      print(colored("the input is not valid", "red"))
     except binascii.Error:
-      print("yah eror")
+      print("wow you got an error,report it to developer")
     except KeyboardInterrupt:
-      print(colored("kalau mau berhenti pilih opsi ke 3 jangan pakai ctrl + c", "yellow"))
+        return
     except EOFError:
-      print(colored("sebaiknya pakai opsi nomor 3 kalau mau pergi", "yellow"))
+        return
