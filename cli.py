@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-import sys
 import base64
 import binascii
+import sys
+
 print("\n")
-a = " ".join(sys.argv[3:]).encode()
 try:
     if len(sys.argv) < 4:
         print("usage:\nbed en b16 hello word")
@@ -24,6 +24,7 @@ try:
                 "b85": base64.b85decode,
                 "z85": base64.z85decode
                 }
+        a = " ".join(sys.argv[3:]).encode()
         if sys.argv[1] == "en":
             if sys.argv[2] in mtden:
                 b = mtden[sys.argv[2]](a)
