@@ -1,3 +1,6 @@
+#BSD 3-Clause License
+#
+#Copyright (c) 2025, 9arya
 import binascii
 from base64 import (b16decode, b16encode, b32decode, b32encode, b64decode,
                     b64encode, b85decode, b85encode)
