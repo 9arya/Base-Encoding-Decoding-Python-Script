@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+#BSD 3-Clause License
+#
+#Copyright (c) 2025, 9arya
 import base64
 import binascii
 import sys
