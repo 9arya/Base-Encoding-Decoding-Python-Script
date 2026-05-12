@@ -28,13 +28,13 @@ try:
                 "z85": base64.z85decode
                 }
         a = " ".join(sys.argv[3:]).encode()
-        if sys.argv[1] == "en":
+        if sys.argv[1] == "en" or sys.argv[1] == "encode" or sys.argv[1] == "e":
             if sys.argv[2] in mtden:
                 b = mtden[sys.argv[2]](a)
                 print(b.decode())
             else:
                 print("the algorithm not support or incorrect")
-        elif sys.argv[1] == "dec":
+        elif sys.argv[1] == "de" or sys.argv[1]=="d" or sys.argv[1] == "decode":
             if sys.argv[2] in mtddec:
                 c = mtddec[sys.argv[2]](a)
                 print(c.decode())
