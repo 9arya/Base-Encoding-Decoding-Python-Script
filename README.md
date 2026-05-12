@@ -5,6 +5,7 @@ untuk memakainya kamu harus menginstall beberapa paket
 
 
 1.Python3.12 atau lebih tinggi
+
 2.git
 
 
