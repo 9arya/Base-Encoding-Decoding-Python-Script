@@ -1,3 +1,6 @@
+#BSD 3-Clause License
+#
+#Copyright (c) 2025, 9arya
 from fungsi import fungsi
 from termcolor import colored
 
