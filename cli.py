@@ -40,6 +40,8 @@ try:
                 print(c.decode())
             else:
                 print("the algorithm is not support or not correct")
+        else:
+            print(f"{sys.argv[1]} not in method,this tools only support encode and decode")
 except SyntaxError:
     print("yang ngoding gak bener")
 except binascii.Error:
