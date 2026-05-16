@@ -44,3 +44,13 @@ python layer_encode.py encode hallo semuanya
 ```
 
 NOTE:jangan digunakkan untuk hal yang negatif seperti menyontek atau mencela orang lain
+
+
+
+
+
+
+
+donasi:
+
+bc1q0a33xtkagw4qqaq6ulwfqvgkghflukta7xsej6
